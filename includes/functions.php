@@ -326,6 +326,12 @@ function wpdev_topbar_header() {
                 }';
             }
             
+            if(!empty($btncolor)) {
+                $closebtncolor = $btncolor;
+            } else {
+                $closebtncolor = 'red';
+            }
+            
             
             // Output variables
             $css = '
@@ -349,7 +355,8 @@ function wpdev_topbar_header() {
                 }' . $btncss . '
 
                 span#wpdev-top-bar-close {
-                    background: rgba(0, 0, 0, 0.1);
+                    background: rgba(0, 0, 0, 0.4);
+                    color: #fff;
                     padding: 5px 9px;
                     border-radius: 2px;
                     float: right;
@@ -359,7 +366,7 @@ function wpdev_topbar_header() {
                 }
 
                 span#wpdev-top-bar-close:hover {
-                    background: red;
+                    background: ' . $closebtncolor . ';
                     color: #fff;
                 }
             </style>
@@ -372,8 +379,6 @@ function wpdev_topbar_header() {
                     jQuery(\'body\').before(\'<div id="wpdev-top-bar"><span id="wpdev-top-bar-mess">' . $bartext . '</span>' . $btntext . '<span id="wpdev-top-bar-close">×</span></div>\');
                     // Get bar height
                     var barHeight = jQuery(\'#wpdev-top-bar\').height();
-                    // Push down body
-                    jQuery(\'body\').css(\'margin-top\', barHeight);
                     // Close on click
                     jQuery(\'#wpdev-top-bar-close\').on(\'click\', function() {
                         jQuery(\'#wpdev-top-bar\').hide();
