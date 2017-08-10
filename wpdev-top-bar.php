@@ -19,7 +19,7 @@ if(!defined('WPINC')) { die; }
 /**
 Constants
 **/
-define('WPDEVBAR_BASE_VERSION', '1.0.0');
+define('WPDEVBAR_BASE_VERSION', '1.0.1');
 define('WPDEVBAR_BASE_PATH', trailingslashit(plugin_dir_path(__FILE__)));
 define('WPDEVBAR_BASE_URI', trailingslashit(plugin_dir_url(__FILE__)));
 
