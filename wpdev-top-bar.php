@@ -3,7 +3,7 @@
 Plugin Name: WP Developers | Top Bar
 Plugin URI: http://wpdevelopers.com
 Description: Set up a dismissable top bar for WordPress.
-Version: 1.0.1
+Version: 1.1.0
 Author: Tyler Johnson
 Author URI: http://tylerjohnsondesign.com/
 Copyright: Tyler Johnson
@@ -19,7 +19,7 @@ if(!defined('WPINC')) { die; }
 /**
 Constants
 **/
-define('WPDEVBAR_BASE_VERSION', '1.0.0');
+define('WPDEVBAR_BASE_VERSION', '1.1.0');
 define('WPDEVBAR_BASE_PATH', trailingslashit(plugin_dir_path(__FILE__)));
 define('WPDEVBAR_BASE_URI', trailingslashit(plugin_dir_url(__FILE__)));
 

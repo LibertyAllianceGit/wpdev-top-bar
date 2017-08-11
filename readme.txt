@@ -26,6 +26,9 @@ Adds a top bar for linking items, as well as cookie support.
 
 == Changelog ==
 
+= 1.1.0 =
+* Bug fix.
+
 = 1.0.1 =
 * Style fix.
 

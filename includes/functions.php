@@ -303,7 +303,8 @@ function wpdev_topbar_header() {
                     background: ' . $btncolor . ';
                     color: ' . $btntextcolor . ';
                     padding: 5px 10px;
-                    margin-left: 10px;
+                    margin: 5px;
+                    display: inline-block;
                 }
 
                 a#wpdev-top-bar-link:hover {
@@ -359,10 +360,11 @@ function wpdev_topbar_header() {
                     color: #fff;
                     padding: 5px 9px;
                     border-radius: 2px;
-                    float: right;
                     margin-right: 10px;
                     cursor: pointer;
                     font-size: 14px;
+                    right: 0;
+                    bottom: 5px;
                 }
 
                 span#wpdev-top-bar-close:hover {
